@@ -20,25 +20,26 @@ This is a **User Authorization and Authentication** project built using the **ME
 
 ### **1\. Clone the repository**
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/suhailpno/FSD-WD-T-B4-T11.git   `
+git clone https://github.com/suhailpno/FSD-WD-T-B4-T11.git   `
 
 ### **2\. Install Dependencies**
 
 Navigate to your project folder and run:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   npm install   `
+npm install   `
 
 ### **3\. Create a .env file**
 
 Create a .env file in the root of your project directory and add the following:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   DBURI=mongodb+srv://zenfsd:zenfsd@cluster0.wpk7u.mongodb.net/?retryWrites=true&w=majority  JWT_SECRET=your-secret-key   `
+DBURI=mongodb+srv://zenfsd:zenfsd@cluster0.wpk7u.mongodb.net/?retryWrites=true&w=majority  
+JWT_SECRET=your-secret-key   `
 
 ### **4\. Run the Application**
 
 Start your server:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   npm start   `
+npm start   `
 
 The backend will be running on http://localhost:3000.
 
@@ -61,11 +62,11 @@ The following routes are available in the application:
     
 *   **Description:** Registers a new user by creating a user document in the database.
     
-    *   jsonCopy code{ "username": "JohnDoe", "email": "johndoe@example.com", "password": "password123"}
+    *   { "username": "JohnDoe", "email": "johndoe@example.com", "password": "password123"}
         
-    *   jsonCopy code{ "user": { "id": "userId", "email": "johndoe@example.com" }, "token": "jwtTokenHere"}
+    *   { "user": { "id": "userId", "email": "johndoe@example.com" }, "token": "jwtTokenHere"}
         
-    *   jsonCopy code{ "errors": { "email": "Email already exists" }}
+    *   { "errors": { "email": "Email already exists" }}
         
 
 ### **2\. Login**
