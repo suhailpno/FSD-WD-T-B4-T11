@@ -1,4 +1,3 @@
-require("dotenv").config();
 
 const express = require("express");
 const app = express();
@@ -6,6 +5,8 @@ const mongoose = require("mongoose");
 const authRoutes = require("./routes/auth");
 const cookieParser = require("cookie-parser");
 const { requireAuth, checkUser } = require("./middleware/authMiddleware");
+
+require("dotenv").config();
 
 //middleware
 app.use(express.static("public"));
